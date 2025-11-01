@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste de Imagens</title>
+</head>
+<body>
+    <h1>Teste de Carregamento das Imagens</h1>
+    
+    <h2>Logo Principal:</h2>
+    <img src="/images/logo_principal_prevenire_120x40.png" alt="Logo Principal" style="border: 1px solid red;">
+    
+    <h2>Logo Hero:</h2>
+    <img src="/images/logo_hero_160x160.png" alt="Logo Hero" style="border: 1px solid red;">
+    
+    <h2>Gildazio:</h2>
+    <img src="/images/gildazio.jpg" alt="Gildazio" style="border: 1px solid red; max-width: 200px;">
+    
+    <h2>Thauanne:</h2>
+    <img src="/images/thauanne.jpg" alt="Thauanne" style="border: 1px solid red; max-width: 200px;">
+    
+    <script>
+        // Testa carregamento das imagens
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            img.onload = () => console.log(`✅ Carregou: ${img.src}`);
+            img.onerror = () => console.log(`❌ Erro: ${img.src}`);
+        });
+    </script>
+</body>
+</html>
