@@ -2,11 +2,14 @@
 
 Site responsivo e moderno para a clínica de saúde mental Prevenire, desenvolvido com React e Tailwind CSS.
 
+<<<<<<< HEAD
 ## 🏥 Sobre a Prevenire
 
 A Prevenire é uma clínica de saúde mental localizada em Gama-DF, especializada em cuidado preventivo para sua saúde mental. Nossa equipe é composta por psicanalistas e terapeutas qualificados.
 
 
+=======
+>>>>>>> fc90eddce74240431698d75dc294f47ee087988c
 ## 🚀 Tecnologias Utilizadas
 
 - **React 18** - Biblioteca para interfaces de usuário
@@ -44,9 +47,12 @@ prevenire-fp/
 └── vite.config.js
 ```
 
+<<<<<<< HEAD
 
 ## 📄 Licença
 
+=======
+>>>>>>> fc90eddce74240431698d75dc294f47ee087988c
 Este projeto é propriedade da Clínica Prevenire. Todos os direitos reservados.
 
 ---
