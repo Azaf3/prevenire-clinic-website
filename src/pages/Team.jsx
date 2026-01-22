@@ -154,7 +154,7 @@ const Team = () => {
               >
                 {/* Image */}
                 <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                  <div className="relative">
+                  <div className="relative max-w-md mx-auto">
                     <div className="aspect-[3/4] bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl overflow-hidden shadow-2xl">
                       <img 
                         src={member.image} 
