@@ -29,7 +29,7 @@ const Services = () => {
       title: 'Terapia Individual',
       description: 'Atendimento personalizado focado nas suas necessidades específicas, promovendo autoconhecimento e bem-estar emocional.',
       features: [
-        'Acompanhamento psicológico personalizado',
+        'Acompanhamento terapêutico personalizado',
         'Técnicas de psicanálise e terapia cognitiva',
         'Desenvolvimento de estratégias de enfrentamento',
         'Espaço seguro para expressão e reflexão'

@@ -22,16 +22,17 @@ const Team = () => {
   const team = [
     {
       name: 'Gildazio Junior',
-      role: 'Psicanalista, Terapeuta e Psicólogo',
+      role: 'Psicanalista e Terapeuta',
       image: '/images/gildazio.png?t=' + Date.now(),
       specialties: [
         'Psicanálise Clínica',
         'Terapia Individual',
-        'Psicologia Clínica',
-        'Orientação Familiar'
+        'Terapia de Casal',
+        'Orientação Familiar',
+        'Transtornos de Ansiedade e Depressão',
+        'Análise de Sonhos'
       ],
       education: [
-        'Graduação em Psicologia',
         'Formação em Psicanálise',
         'Especialização em Terapia Cognitivo-Comportamental'
       ],
@@ -41,16 +42,14 @@ const Team = () => {
     },
     {
       name: 'Thauanne Ferreira',
-      role: 'Psicanalista, Terapeuta e Psicóloga',
+      role: 'Psicanalista e Terapeuta',
       image: '/images/thauanne.png?t=' + Date.now(),
       specialties: [
         'Psicanálise Clínica',
-        'Terapia de Casal',
-        'Psicologia Feminina',
+        'Atendimento Infantil',
         'Transtornos de Ansiedade'
       ],
       education: [
-        'Graduação em Psicologia',
         'Formação em Psicanálise',
         'Especialização em Terapia Familiar'
       ],
@@ -86,11 +85,11 @@ const Team = () => {
   const testimonials = [
     {
       text: 'O Gildazio tem uma abordagem muito humana e acolhedora. Me ajudou muito a entender e lidar com meus sentimentos.',
-      author: 'Paciente G.J.'
+      author: 'Paciente M.S.'
     },
     {
       text: 'A Thauanne é uma profissional excepcional. Sua dedicação e conhecimento fizeram toda a diferença no meu processo terapêutico.',
-      author: 'Paciente T.F.'
+      author: 'Paciente R.A.'
     }
   ]
 
