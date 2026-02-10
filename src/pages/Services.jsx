@@ -26,7 +26,7 @@ const Services = () => {
   const services = [
     {
       icon: User,
-      title: 'Terapia Individual',
+      title: 'Análise Individual',
       description: 'Atendimento personalizado focado nas suas necessidades específicas, promovendo autoconhecimento e bem-estar emocional.',
       features: [
         'Acompanhamento terapêutico personalizado',

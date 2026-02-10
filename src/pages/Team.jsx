@@ -33,27 +33,30 @@ const Team = () => {
         'Análise de Sonhos'
       ],
       education: [
-        'Formação em Psicanálise',
-        'Especialização em Terapia Cognitivo-Comportamental'
+        'Teologia',
+        'Psicanálise Clínica'
       ],
-      experience: '8+ anos de experiência',
+      experience: '+17 anos de experiência',
       approach: 'Acredito que cada pessoa possui recursos internos únicos para superar desafios. Minha abordagem combina técnicas psicanalíticas com métodos terapêuticos modernos, sempre respeitando o tempo e as necessidades individuais de cada paciente.',
       whatsapp: 'https://wa.me/5561984670305?text=Olá, gostaria de agendar uma consulta com Gildazio Junior'
     },
     {
       name: 'Thauanne Ferreira',
-      role: 'Psicanalista e Terapeuta',
+      role: 'Psicanalista, Terapeuta e Psicopedagoga',
       image: '/images/thauanne.png?t=' + Date.now(),
       specialties: [
-        'Psicanálise Clínica',
-        'Atendimento Infantil',
-        'Transtornos de Ansiedade'
+        'Psicanalista',
+        'Terapeuta',
+        'Educação Especial e Inclusiva',
+        'Neuropsicopedagogia Clínica e Institucional',
+        'Psicopedagogia',
+        'Psicanálise Clínica'
       ],
       education: [
         'Formação em Psicanálise',
         'Especialização em Terapia Familiar'
       ],
-      experience: '6+ anos de experiência',
+      experience: '+3 anos de experiência',
       approach: 'Trabalho com uma escuta acolhedora e sem julgamentos, criando um espaço seguro onde meus pacientes podem explorar seus sentimentos e pensamentos. Acredito no poder transformador da palavra e no potencial de cada pessoa para encontrar seu caminho.',
       whatsapp: 'https://wa.me/5561984670305?text=Olá, gostaria de agendar uma consulta com Thauanne Ferreira'
     }

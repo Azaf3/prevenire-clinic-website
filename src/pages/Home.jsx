@@ -63,8 +63,8 @@ const Home = () => {
   ]
 
   const stats = [
-    { number: '500+', label: 'Pacientes Atendidos' },
-    { number: '3+', label: 'Anos de Experiência' },
+    { number: '1000+', label: 'Pacientes Atendidos' },
+    { number: '17+', label: 'Anos de Experiência' },
     { number: '2', label: 'Profissionais Especializados' },
     { number: '100%', label: 'Foco no Bem-estar' }
   ]
