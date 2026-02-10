@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import emailjs from '@emailjs/browser'
 import { 
   MapPin, 
   Phone, 
@@ -24,6 +25,8 @@ const Contact = () => {
     message: ''
   })
   const [showSuccess, setShowSuccess] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [errorMessage, setErrorMessage] = useState('')
 
   useEffect(() => {
     document.title = 'Contato - Prevenire'
@@ -42,18 +45,34 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Simular envio de formulário
-    setShowSuccess(true)
-    setTimeout(() => {
-      setShowSuccess(false)
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: ''
+    setIsLoading(true)
+    setErrorMessage('')
+    
+    // Configuração do EmailJS
+    const serviceId = 'service_203o1je'
+    const templateId = 'template_7uf8hzb'
+    const publicKey = 'OWoxMer-LLh91mBAV'
+    
+    // Enviar e-mail usando EmailJS
+    emailjs.send(serviceId, templateId, formData, publicKey)
+      .then(() => {
+        setShowSuccess(true)
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        })
+        setTimeout(() => setShowSuccess(false), 5000)
       })
-    }, 3000)
+      .catch((error) => {
+        console.error('Erro ao enviar e-mail:', error)
+        setErrorMessage('Erro ao enviar mensagem. Tente novamente ou entre em contato pelo WhatsApp.')
+      })
+      .finally(() => {
+        setIsLoading(false)
+      })
   }
 
   const contactInfo = [
@@ -296,9 +315,14 @@ const Contact = () => {
                     className="w-full btn-primary flex items-center justify-center"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    disabled={showSuccess}
+                    disabled={showSuccess || isLoading}
                   >
-                    {showSuccess ? (
+                    {isLoading ? (
+                      <>
+                        <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
+                        Enviando...
+                      </>
+                    ) : showSuccess ? (
                       <>
                         <CheckCircle className="w-5 h-5 mr-2" />
                         Mensagem Enviada!
@@ -310,6 +334,12 @@ const Contact = () => {
                       </>
                     )}
                   </motion.button>
+
+                  {errorMessage && (
+                    <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
+                      {errorMessage}
+                    </div>
+                  )}
                 </form>
 
                 {showSuccess && (
