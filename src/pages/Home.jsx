@@ -252,10 +252,13 @@ const Home = () => {
                 <h3 className="text-2xl font-bold mb-4">Nossa Localização</h3>
                 <div className="space-y-3">
                   <p className="flex items-center">
-                    <span className="font-medium">Gama-DF</span>
+                    <span className="font-medium">Setor Central, Gama-DF</span>
                   </p>
                   <p className="flex items-center">
                     <span>Edifício Central, 2º andar</span>
+                  </p>
+                  <p className="flex items-center">
+                    <span>Salas: 205/207</span>
                   </p>
                   <p className="flex items-center">
                     <span>Agendamento: (61) 98467-0305</span>
@@ -263,7 +266,7 @@ const Home = () => {
                 </div>
                 
                 <a
-                  href="https://g.co/kgs/Y6qbwyv"
+                  href="https://www.google.com/maps/place/Prevenire+Sa%C3%BAde+e+Cuidado+Mental+Psicanalista+Cl%C3%ADnico+-+Gildazio+Junior/@-16.0182238,-48.0655324,17z/data=!4m6!3m5!1s0x935981ec1c7b3dcd:0x99494436b17d9812!8m2!3d-16.0182535!4d-48.0654838!16s%2Fg%2F11qptdj_4m?entry=ttu&g_ep=EgoyMDI2MDIwOC4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block mt-6 bg-white text-primary-600 font-medium py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors"
