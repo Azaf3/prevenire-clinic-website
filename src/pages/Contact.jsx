@@ -60,10 +60,10 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Localização',
-      details: ['Gama-DF', 'Edifício Central, 2º andar'],
+      details: ['Setor Central, Gama-DF', 'Edifício Central, 2º andar', 'Salas: 205/207'],
       action: {
         text: 'Ver no Maps',
-        link: 'https://g.co/kgs/Y6qbwyv'
+        link: 'https://www.google.com/maps/place/Prevenire+Sa%C3%BAde+e+Cuidado+Mental+Psicanalista+Cl%C3%ADnico+-+Gildazio+Junior/@-16.0182238,-48.0655324,17z/data=!4m6!3m5!1s0x935981ec1c7b3dcd:0x99494436b17d9812!8m2!3d-16.0182535!4d-48.0654838!16s%2Fg%2F11qptdj_4m?entry=ttu&g_ep=EgoyMDI2MDIwOC4wIKXMDSoASAFQAw%3D%3D'
       }
     },
     {
@@ -348,7 +348,7 @@ const Contact = () => {
                     <h3 className="text-lg font-semibold mb-2">Nossa Localização</h3>
                     <p className="text-primary-100">Gama-DF, Edifício Central, 2º andar</p>
                     <a
-                      href="https://g.co/kgs/Y6qbwyv"
+                      href="https://www.google.com/maps/place/Prevenire+Sa%C3%BAde+e+Cuidado+Mental+Psicanalista+Cl%C3%ADnico+-+Gildazio+Junior/@-16.0182238,-48.0655324,17z/data=!4m6!3m5!1s0x935981ec1c7b3dcd:0x99494436b17d9812!8m2!3d-16.0182535!4d-48.0654838!16s%2Fg%2F11qptdj_4m?entry=ttu&g_ep=EgoyMDI2MDIwOC4wIKXMDSoASAFQAw%3D%3D"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block mt-4 bg-white text-primary-600 px-4 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors"
